@@ -4,7 +4,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-// check if class already exists
 if ( ! class_exists( 'AcfFieldImageSizeSelect' ) ) {
 
 
@@ -44,7 +43,6 @@ if ( ! class_exists( 'AcfFieldImageSizeSelect' ) ) {
 			*/
 			$this->image_sizes = $this->get_image_sizes();
 
-			// do not delete!
 			parent::__construct();
 
 		}
@@ -86,6 +84,7 @@ if ( ! class_exists( 'AcfFieldImageSizeSelect' ) ) {
 		*
 		*  Create settings the field. These are visible when editing a field.
 		*/
+
 		function get_image_sizes( $single_size = '' ) {
 
 			$sizes       = array();
@@ -136,20 +135,22 @@ if ( ! class_exists( 'AcfFieldImageSizeSelect' ) ) {
 			return $sizes;
 		}
 
+
 		/*
 		*  get_image_dimensions()
 		*
 		*  Retrive image dimensions based on the image size name.
 		*  https://developer.wordpress.org/reference/functions/get_intermediate_image_sizes/#comment-730
 		*/
+
 		function get_image_dimensions( $single_size = '' ) {
 			global $_wp_additional_image_sizes;
 
-			$sizes = array();
-			$get_intermediate_image_sizes = get_intermediate_image_sizes();
+			$sizes       = array();
+			$image_sizes = get_intermediate_image_sizes();
 
 			// Create the full array with sizes and crop info
-			foreach ( $get_intermediate_image_sizes as $_size ) {
+			foreach ( $image_sizes as $_size ) {
 				if ( in_array( $_size, array( 'thumbnail', 'medium', 'large' ) ) ) {
 					$sizes[ $_size ] = array(
 						'width'  => intval( get_option( $_size . '_size_w' ) ),

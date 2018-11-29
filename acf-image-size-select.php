@@ -3,7 +3,7 @@
 /*
 Plugin Name: Advanced Custom Fields: Image Size Select
 Plugin URI: https://jereross.com/acf-image-size-select/
-Description: SHORT_DESCRIPTION
+Description: Field to select registered image sizes within the WordPress dashboard.
 Version: 1.0.0
 Author: Jeremy Ross
 Author URI: https://jereross.com/
