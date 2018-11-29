@@ -27,7 +27,6 @@ $my_image_id   = get_field('my_image_id');    // ACF Image return type set to ID
 $my_image_size = get_field('my_image_size');  // The selected image size (eg. large)
 
 echo wp_get_attachment_image( $my_image_id, $my_image_size );  // Output the image based on the ID, and the Image Size selected.
-
 ?>
 ```
 

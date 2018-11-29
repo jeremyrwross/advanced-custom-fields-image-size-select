@@ -13,7 +13,7 @@ Field to select registered image sizes within the WordPress dashboard.
 
 Field to select registered image sizes within the WordPress dashboard.
 
-= Compatibility =
+== Compatibility ==
 
 This ACF field type is compatible with:
 * ACF 5
@@ -23,6 +23,21 @@ This ACF field type is compatible with:
 1. Copy the `acf-image-size-select` folder into your `wp-content/plugins` folder
 2. Activate the Image Size Select plugin via the plugins admin page
 3. Create a new field via ACF and select the Image Size Select type
+
+== How to Use ==
+
+Once activated, this plugin will create a *Image Size* field type in ACF.  This field type will list all registered field types as a drop down within the field group.
+
+To use this field within your custom templates you will use the following code:
+
+```
+<?php
+$my_image_id   = get_field('my_image_id');    // ACF Image return type set to ID for this demo
+$my_image_size = get_field('my_image_size');  // The selected image size (eg. large)
+
+echo wp_get_attachment_image( $my_image_id, $my_image_size );  // Output the image based on the ID, and the Image Size selected.
+?>
+```
 
 == Changelog ==
 
