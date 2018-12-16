@@ -1,8 +1,9 @@
 === Advanced Custom Fields: Image Size Select Field ===
-Contributors: Jeremy Ross
+Contributors: jeremyrwross
 Tags: Advanced Custom Fields, ACF, Image Size
 Requires at least: 3.6.0
-Tested up to: 4.9.0
+Tested up to: 5.0.1
+Requires PHP: 5.6
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -30,14 +31,12 @@ Once activated, this plugin will create a *Image Size* field type in ACF.  This 
 
 To use this field within your custom templates you will use the following code:
 
-```
-<?php
+~~~
 $my_image_id   = get_field('my_image_id');    // ACF Image return type set to ID for this demo
 $my_image_size = get_field('my_image_size');  // The selected image size (eg. large)
 
 echo wp_get_attachment_image( $my_image_id, $my_image_size );  // Output the image based on the ID, and the Image Size selected.
-?>
-```
+~~~
 
 == Changelog ==
 
