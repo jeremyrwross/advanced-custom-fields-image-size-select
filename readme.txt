@@ -42,3 +42,7 @@ echo wp_get_attachment_image( $my_image_id, $my_image_size );  // Output the ima
 
 = 1.0.0 =
 * Initial Release.
+
+= 1.0.1 =
+* Updated line formatting
+* Added github to SVN sync
