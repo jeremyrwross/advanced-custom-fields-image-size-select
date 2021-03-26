@@ -2,7 +2,7 @@
 Contributors: jeremyrwross
 Tags: Advanced Custom Fields, ACF, Image Size
 Requires at least: 3.6.0
-Tested up to: 5.6
+Tested up to: 5.7
 Requires PHP: 5.6
 Stable tag: trunk
 License: GPLv2 or later
@@ -46,3 +46,7 @@ echo wp_get_attachment_image( $my_image_id, $my_image_size );  // Output the ima
 = 1.0.1 =
 * Updated line formatting
 * Added github to SVN sync
+
+= 1.0.2 =
+* Added medium_large to list of WordPress images to check
+* Removed automated github to SVN sync
