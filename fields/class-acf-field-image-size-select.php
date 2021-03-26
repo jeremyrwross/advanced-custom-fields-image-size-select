@@ -70,7 +70,7 @@ if ( ! class_exists( 'AcfFieldImageSizeSelect' ) ) {
 
 			acf_render_field_setting( $field, array(
 				'label'			=> 'Show Dimensions',
-				'instructions'	=> 'Select which image sizes appear.',
+				'instructions'	=> 'Display the image size inside the drop down.',
 				'type'			=> 'true_false',
 				'name'			=> 'show_dimensions',
 				'ui'			=> 1,
@@ -151,7 +151,7 @@ if ( ! class_exists( 'AcfFieldImageSizeSelect' ) ) {
 
 			// Create the full array with sizes and crop info
 			foreach ( $image_sizes as $_size ) {
-				if ( in_array( $_size, array( 'thumbnail', 'medium', 'large' ) ) ) {
+				if ( in_array( $_size, array( 'thumbnail', 'medium', 'large', 'medium_large' ) ) ) {
 					$sizes[ $_size ] = array(
 						'width'  => intval( get_option( $_size . '_size_w' ) ),
 						'height' => intval( get_option( $_size . '_size_h' ) ),
