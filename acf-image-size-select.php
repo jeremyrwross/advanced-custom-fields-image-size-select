@@ -25,7 +25,7 @@ if ( ! class_exists( 'AcfPluginImageSizeSelect' ) ) {
 		function __construct() {
 
 			$this->settings = array(
-				'version'	=> '1.0.1',
+				'version'	=> '1.0.2',
 				'url'		=> plugin_dir_url( __FILE__ ),
 				'path'		=> plugin_dir_path( __FILE__ ),
 			);
