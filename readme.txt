@@ -1,7 +1,7 @@
 === Advanced Custom Fields: Image Size Select Field ===
 Contributors: jeremyrwross
 Tags: Advanced Custom Fields, ACF, Image Size
-Requires at least: 3.6.0
+Requires at least: 5.6.0
 Tested up to: 6.3
 Requires PHP: 7.0
 Stable tag: trunk
