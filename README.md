@@ -44,3 +44,7 @@ echo wp_get_attachment_image( $my_image_id, $my_image_size );  // Output the ima
 1.0.2
 * Added medium_large to list of WordPress images to check
 * Removed automated github to SVN sync
+
+1.0.3
+* Add Github Action for Releases
+* Update Tested version to 6.3
