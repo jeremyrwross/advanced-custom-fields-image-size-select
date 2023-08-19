@@ -1,9 +1,9 @@
 === Advanced Custom Fields: Image Size Select Field ===
 Contributors: jeremyrwross
 Tags: Advanced Custom Fields, ACF, Image Size
-Requires at least: 5.3.0
+Requires at least: 3.6.0
 Tested up to: 6.3
-Requires PHP: 7.0
+Requires PHP: 5.6
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -38,15 +38,15 @@ $my_image_size = get_field('my_image_size');  // The selected image size (eg. la
 echo wp_get_attachment_image( $my_image_id, $my_image_size );  // Output the image based on the ID, and the Image Size selected.
 ~~~
 
-== Changelog ==
+== Changelog 
 
-= 1.0.0 =
-* Initial Release.
+= 1.0.2 =
+* Added medium_large to list of WordPress images to check
+* Removed automated github to SVN sync
 
 = 1.0.1 =
 * Updated line formatting
 * Added github to SVN sync
 
-= 1.0.2 =
-* Added medium_large to list of WordPress images to check
-* Removed automated github to SVN sync
+= 1.0.0 =
+* Initial Release.
