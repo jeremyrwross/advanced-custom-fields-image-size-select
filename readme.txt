@@ -2,7 +2,7 @@
 Contributors: jeremyrwross
 Tags: Advanced Custom Fields, ACF, Image Size
 Requires at least: 3.6.0
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 7.0
 Stable tag: 1.0.3
 License: GPLv2 or later
