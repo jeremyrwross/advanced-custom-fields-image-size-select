@@ -2,9 +2,9 @@
 Contributors: jeremyrwross
 Tags: Advanced Custom Fields, ACF, Image Size
 Requires at least: 3.6.0
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 7.0
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,7 +38,10 @@ $my_image_size = get_field('my_image_size');  // The selected image size (eg. la
 echo wp_get_attachment_image( $my_image_id, $my_image_size );  // Output the image based on the ID, and the Image Size selected.
 ~~~
 
-== Changelog
+== Changelog ==
+
+= 1.0.4 =
+* Fix PHP 8.2 dynamic property deprecation warnings.
 
 = 1.0.3 =
 * Add Github Action for Releases

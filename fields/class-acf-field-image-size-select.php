@@ -9,6 +9,20 @@ if ( ! class_exists( 'AcfFieldImageSizeSelect' ) ) {
 
 	class AcfFieldImageSizeSelect extends acf_field {
 
+		/**
+		 * Plugin settings.
+		 *
+		 * @var array
+		 */
+		public $settings;
+
+		/**
+		 * Registered WordPress image sizes.
+		 *
+		 * @var array
+		 */
+		public $image_sizes;
+
 		function __construct( $settings ) {
 
 			/*
